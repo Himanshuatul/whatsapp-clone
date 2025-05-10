@@ -1,6 +1,6 @@
 import { CHECK_USER_ROUTE } from "@/utils/ApiRoutes";
 import { firebaseAuth } from "@/utils/FirebaseConfig";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup } from '@/utils/FirebaseConfig';
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { FcGoogle } from "react-icons/fc";
