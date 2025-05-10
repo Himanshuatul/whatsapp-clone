@@ -1,7 +1,7 @@
 import { useStateProvider } from "@/context/StateContext";
 import { reducerCases } from "@/context/constants";
 import { firebaseAuth } from "@/utils/FirebaseConfig";
-import { signOut } from "firebase/auth";
+import { signOut } from '@/utils/FirebaseConfig';
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
