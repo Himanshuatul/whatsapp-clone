@@ -20,12 +20,16 @@ const app = initializeApp(firebaseConfig);
 // Export Firebase Auth instance
 export const firebaseAuth = getAuth(app);
 
-// Optional: Initialize Analytics safely (only in browser)
+// Initialize Firebase Analytics only in the browser
 if (typeof window !== "undefined") {
-  isSupported().then((supported) => {
+  const initializeAnalyticsSafely = async () => {
+    const supported = await isSupported();
     if (supported) {
       getAnalytics(app);
     }
-  });
+  };
+  
+  initializeAnalyticsSafely(); // Safe initialization of Firebase Analytics
 }
+
 
