@@ -21,7 +21,7 @@ const server = app.listen(process.env.PORT, () => {
 });
 const io = new Server(server, {
     cors: {
-        origin: "https://whatsapp-frontend-cbdo.onrender.com",
+        origin: process.env.FRONTEND_URL,
         credentials:true,
 
     },
