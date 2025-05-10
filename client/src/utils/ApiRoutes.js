@@ -1,4 +1,5 @@
-export const HOST ="https://whatsapp-backend-zral.onrender.com";
+export const HOST = process.env.NEXT_PUBLIC_API_URL;
+
 const AUTH_ROUTE =`${HOST}/api/auth`;
 const MESSAGES_ROUTE=`${HOST}/api/messages`;
 export const CHECK_USER_ROUTE =`${AUTH_ROUTE}/check-user`;
